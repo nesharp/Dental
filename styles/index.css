@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@500&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Montserrat", sans-serif;
+	color: #3d4c5e;
+}
+::-webkit-scrollbar {
+	width: 0;
+}
+
+.wrapper {
+	min-height: 100vh;
+	background: rgb(233, 242, 248);
+	background: linear-gradient(
+		90deg,
+		rgba(233, 242, 248, 1) 35%,
+		rgba(240, 247, 249, 1) 100%
+	);
+	background-blend-mode: multiply;
+	background-image: url("/images/back.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/* Header */
+header {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: 80px;
+	padding: 20px;
+	background-color: #f0f7f9;
+	opacity: 0.9;
+    border-radius: 0px 0px 30px 30px;
+}
+nav {
+	display: flex;
+	width: 80%;
+	margin: 10px 20px;
+}
+nav > a {
+	margin-right: 15px;
+	font-weight: 800;
+    cursor: pointer;
+    text-decoration: none;
+}
+span {
+	color: #00a6ff;
+}
+h1 {
+	font-size: 30px;
+	font-weight: 1000;
+}
+
+/* Content */
+section {
+	display: flex;
+	justify-content: space-between;
+	width: 98%;
+	height: calc(100vh - 80px - 120px);
+    border-radius: 20px;
+	background-color: rgba(240, 247, 249, 0.9);
+    overflow: hidden;
+    margin: 5px auto;
+}
+.texts {
+	width: 49%;
+	height: 98%;
+	margin: 1% auto;
+	border-radius: 30px;
+	
+	padding: 50px;
+}
+.images {
+	width: 49%;
+	height: 98%;
+	margin: 1% auto;
+	
+
+	
+	overflow: hidden;
+}
+.images img {
+	height: 90%;
+	margin-top: 10%;
+	margin-left: 25%;
+	opacity: 1;
+}
+.texts h2 {
+	font-size: 10vh;
+	font-weight: 1000;
+	font-family: "Roboto", sans-serif;
+	vertical-align: bottom;
+}
+.texts p {
+	font-size: 2.6vh;
+	font-weight: 1000;
+	font-family: "Montserrat", sans-serif;
+	margin-top: 20px;
+}
+/* footer */
+footer {
+	height: 110px;
+	display: flex;
+	justify-content: space-between;
+	background-color: #f0f7f9;
+	margin-top: 10px;
+    border-radius: 30px 20px 0px 0px;
+}
+footer .add{
+	width: 48%;
+	height: 90%;
+	background-color: #f0f7f9;
+	filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+	margin: 4px auto;
+	border-radius: 20px;
+    padding: 20px;
+    
+}
+footer .info{
+    width: 48%;
+	height: 90%;
+	background: transparent;
+    margin: 4px auto;
+    padding: 20px;
+}
+
+
+.add p{
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    margin-top: 20px;
+    font-size: 1.7em;
+    color: #E5007E;
+}
+footer .info p {
+	width: fit-content;
+    margin: 10px auto;
+}
+.info span {
+	color: #00a6ff;
+}
+
+/* adaptive */
+@media screen and (min-width: 1020px) {
+	.texts h2 {
+		margin-top: 50px;
+	}
+}
